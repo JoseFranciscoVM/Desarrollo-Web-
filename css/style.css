@@ -1,0 +1,58 @@
+body{
+    min-height: 100vh;
+    background-color:#3f0437 ;
+    display: grid;
+    place-items: center;
+}
+label {
+
+    background-color: rgb(31, 4, 66);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+
+.app{
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+.card{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #0e0d0d;
+    transform-style: preserve-3d;
+    transition: .7s;
+}
+
+.sides{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    backface-visibility: hidden;
+}
+.front{
+    background-color: rgb(54, 0, 68);
+}
+.back{
+    background-color: rgb(10, 0, 10);
+    transform: rotateY(180deg);
+}
+
+.btn{
+    padding: 1em 1.5em;
+    color: #ffffff;
+    background-color: rgb(31, 4, 66);
+    outline: none;
+    border: none;
+}
+
+.rotate{
+    transform: rotateY(180deg);
+}

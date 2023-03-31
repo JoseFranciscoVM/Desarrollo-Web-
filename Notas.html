@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    
+    <script type="text/javascript">
+        alert ("Block De Notas ");
+        </script>
+      <link rel="stylesheet" href="./css/styles.css">
+      <script src="./js/script.js" type="text/javascript" defer></script>
+</head>
+<body>
+     <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        
+    <img src="https://static.vecteezy.com/system/resources/previews/009/306/117/non_2x/calendar-icon-clipart-design-illustration-free-png.png" alt="Mi Primer Imagen "- width="220" height="250"></p>
+    <h1>"Notas"</h1> 
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+           
+        </form>
+        <label for="mes"> Que Realizaras Hoy   :</label>
+        <div id="tasksContainer"></div>
+    </div>
+<!-- 
+aqui inicia el darkmode  -->
+
+    <link rel="stylesheet" href="toggle.css">
+</head>
+<body>
+    <div id="container">
+        <div class="toggle"></div>
+        </div>
+
+        <script src="toggle.js"></script>
+</body>
+</html>
